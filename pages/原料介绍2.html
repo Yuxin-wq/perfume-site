@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原料介绍</title>
+    <link rel="stylesheet" href="../assets/css/ingredient2-style.css">
+    <style>
+        .to-qi-arrow-btn {
+            position: fixed;
+            right: 32px;
+            bottom: 32px;
+            z-index: 1000;
+            background: rgba(0,0,0,0.6);
+            border: none;
+            border-radius: 50%;
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .to-qi-arrow-btn:hover {
+            background: rgba(220,114,178,0.8);
+        }
+        .to-qi-arrow-btn svg {
+            width: 32px;
+            height: 32px;
+            fill: none;
+            stroke: #fff;
+            stroke-width: 2.5;
+        }
+    </style>
+</head>
+<body>
+    <!-- 左上角文字和退出箭头 -->
+    <div class="Rose-title">Rose 玫瑰</div>
+    <a href="../pages/原料目录1.html" class="exit-arrow">←</a>
+
+    <!-- 左侧视频容器 -->
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="../assets/videos/ingredient2-Video.mp4" type="video/mp4">
+            您的浏览器不支持视频播放
+        </video>
+    </div>
+
+    <!-- 右侧内容容器 -->
+    <div class="content-container">
+        <!-- 1. 介绍文字 -->
+        <section class="text-section">
+            <h2>INTRODUCTION</h2>
+            <p>玫瑰精油（Rosa damascena）不仅以其优雅的香气闻名，更在芳香疗法中被广泛应用于情绪调节和心理疗愈。​其主要活性成分——香茅醇（citronellol）和香叶醇（geraniol）——通过嗅觉通路作用于大脑边缘系统，调节神经递质活动，从而带来多方面的情绪疗愈效果。
+        </section>
+
+        <h2>MAIN INGREDIENTS</h2>
+        <!-- 替换为柱状图表 -->
+        <div class="bar-chart">
+            <div class="bar-container">
+                <div class="bar" style="height: 100%; background: linear-gradient(to top, #000000 10%, #DC72B2 90%);"></div>
+                <p class="bar-label">Citronellol</p>
+            </div>
+            <div class="bar-container">
+                <div class="bar" style="height: 65%; background: linear-gradient(to top, #000000 10%, #DC72B2 90%);"></div>
+                <p class="bar-label">Nonadecane</p>
+            </div>
+            <div class="bar-container">
+                <div class="bar" style="height: 95%; background: linear-gradient(to top, #000000 10%, #DC72B2 90%);"></div>
+                <p class="bar-label">Geraniol</p>
+            </div>
+            <div class="bar-container">
+                <div class="bar" style="height: 40%; background: linear-gradient(to top, #000000 10%, #DC72B2 90%);"></div>
+                <p class="bar-label">linalool</p>
+            </div>
+            <div class="bar-container">
+                <div class="bar" style="height: 55%; background: linear-gradient(to top, #000000 10%, #DC72B2 90%);"></div>
+                <p class="bar-label">nerol</p>
+            </div>
+        </div>
+
+        <!-- 3. 产区图片（替换为单张） -->
+        <section class="production-section">
+            <h2>MAIN PRODUCTION AREA</h2>
+            <!-- 四张产区图片 + 文字 -->
+            <div class="region-container">
+                <div class="region-item">
+                    <img src="../assets/images/region1-玫瑰.jpg" alt="产区1">
+                    <p class="region-text">Bulgaria</p>
+                </div>
+                <div class="region-item">
+                    <img src="../assets/images/region2-玫瑰.jpg" alt="产区2">
+                    <p class="region-text">Turkey</p>
+                </div>
+                <div class="region-item">
+                    <img src="../assets/images/region3-玫瑰.jpg" alt="产区3">
+                    <p class="region-text">Morocco</p>
+                </div>
+                <div class="region-item">
+                    <img src="../assets/images/region4-玫瑰.jpg" alt="产区4">
+                    <p class="region-text">Iran</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="floral-title">floral 花香调</div>
+        <button class="to-qi-arrow-btn" onclick="window.location.href='满.html?from=原料介绍1.html'" title="香水推荐">
+            <svg viewBox="0 0 48 48"><line x1="12" y1="24" x2="36" y2="24"/><polyline points="30,18 36,24 30,30"/></svg>
+        </button>
+    </div>
+</body>
+</html>

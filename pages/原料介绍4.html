@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原料介绍</title>
+    <link rel="stylesheet" href="../assets/css/ingredient4-style.css">
+    <style>
+        .to-qi-arrow-btn {
+            position: fixed;
+            right: 32px;
+            bottom: 32px;
+            z-index: 1000;
+            background: rgba(0,0,0,0.6);
+            border: none;
+            border-radius: 50%;
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .to-qi-arrow-btn:hover {
+            background: rgba(76,117,153,0.8);
+        }
+        .to-qi-arrow-btn svg {
+            width: 32px;
+            height: 32px;
+            fill: none;
+            stroke: #fff;
+            stroke-width: 2.5;
+        }
+    </style>
+</head>
+<body>
+    <!-- 左上角文字和退出箭头 -->
+    <div class="Lemon-title">Lemon 柠檬</div>
+    <a href="../pages/原料目录2.html" class="exit-arrow">←</a>
+
+    <!-- 左侧视频容器 -->
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="../assets/videos/ingredient4-Video.mp4" type="video/mp4">
+            您的浏览器不支持视频播放
+        </video>
+    </div>
+
+    <!-- 右侧内容容器 -->
+    <div class="content-container">
+        <!-- 1. 介绍文字 -->
+        <section class="text-section">
+            <h2>INTRODUCTION</h2>
+            <p>柠檬精油以单萜烯柠檬烯为主（约40–60%），辅以β-蒎烯、γ-松油烯和少量芳樟醇等成分。吸入这些挥发物可激活鼻腔嗅觉受体，信息直达杏仁核与海马体等边缘系统，抑制下丘脑—垂体—肾上腺轴（HPA），降低皮质醇水平，增强GABA <sub>A</sub> 介导的抑制性神经传导，并提高5-HT₁A受体和多巴胺活性，从而产生显著的抗焦虑、抗抑郁、提升注意力与认知功能及情绪振奋效果。
+        </section>
+
+        <h2>MAIN INGREDIENTS</h2>
+        <!-- 替换为柱状图表 -->
+        <div class="bar-chart">
+            <div class="bar-container">
+                <div class="bar" style="height: 100%; background: linear-gradient(to top, #000000 10%, #FFFE65 90%);"></div>
+                <p class="bar-label">Limonene</p>
+            </div>
+            <div class="bar-container">
+                <div class="bar" style="height: 65%; background: linear-gradient(to top, #000000 10%, #FFFE65 90%);"></div>
+                <p class="bar-label">β-Pinene</p>
+            </div>
+            <div class="bar-container">
+                <div class="bar" style="height: 95%; background: linear-gradient(to top, #000000 10%, #FFFE65 90%);"></div>
+                <p class="bar-label">γ-Terpinene</p>
+            </div>
+            <div class="bar-container">
+                <div class="bar" style="height: 40%; background: linear-gradient(to top, #000000 10%, #FFFE65 90%);"></div>
+                <p class="bar-label">Linalool</p>
+            </div>
+            <div class="bar-container">
+                <div class="bar" style="height: 55%; background: linear-gradient(to top, #000000 10%, #FFFE65 90%);"></div>
+                <p class="bar-label">α-Terpineol</p>
+            </div>
+        </div>
+
+        <!-- 3. 产区图片（替换为单张） -->
+        <section class="production-section">
+            <h2>MAIN PRODUCTION AREA</h2>
+            <!-- 四张产区图片 + 文字 -->
+            <div class="region-container">
+                <div class="region-item">
+                    <img src="../assets/images/region1-柠檬.jpg" alt="产区1">
+                    <p class="region-text">India</p>
+                </div>
+                <div class="region-item">
+                    <img src="../assets/images/region2-柠檬.jpg" alt="产区2">
+                    <p class="region-text">Mexico</p>
+                </div>
+                <div class="region-item">
+                    <img src="../assets/images/region3-柠檬.jpg" alt="产区3">
+                    <p class="region-text">China</p>
+                </div>
+                <div class="region-item">
+                    <img src="../assets/images/region4-柠檬.jpg" alt="产区4">
+                    <p class="region-text">Argentina</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Citrus-title">Citrus 柑橘调</div>
+        <button class="to-qi-arrow-btn" onclick="window.location.href='忍.html?from=原料介绍4.html'" title="香水推荐">
+            <svg viewBox="0 0 48 48"><line x1="12" y1="24" x2="36" y2="24"/><polyline points="30,18 36,24 30,30"/></svg>
+        </button>
+    </div>
+</body>
+</html>

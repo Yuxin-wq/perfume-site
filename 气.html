@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>香水推荐</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: 'Abhaya Libre', 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      background: #101010;
+      color: #fff;
+    }
+    .video-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: 0;
+    }
+    .gradient-mask {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 1;
+      background: linear-gradient(to bottom, #000 0%, #0C0C0C 10%, #101010 30%, #1C1C1C 45%, #282828 55%, rgba(102,102,102,0) 100%);
+      opacity: 0.85;
+    }
+    .back-btn {
+      position: fixed;
+      top: 24px;
+      left: 48px;
+      z-index: 10;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      outline: none;
+    }
+    .main-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding-top: 7vh;
+    }
+    .brand {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.5em;
+      margin-bottom: 32px;
+      margin-top: 0;
+      text-align: center;
+    }
+    .perfume-img {
+      width: 28vw;
+      max-width: 420px;
+      min-width: 200px;
+      margin: 0 auto 40px auto;
+      margin-top: 24px;
+      display: block;
+    }
+    .perfume-name {
+      font-family: 'Abhaya Libre ExtraBold', serif;
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      text-align: center;
+      line-height: 1.1;
+    }
+    .subtitle {
+      font-family: 'Abhaya Libre Medium', serif;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.24em;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    .divider {
+      width: 80px;
+      height: 1px;
+      background: rgba(255,255,255,0.7);
+      margin: 0 auto 24px auto;
+      opacity: 0.85;
+    }
+    .notes {
+      font-family: 'Abhaya Libre Medium', serif;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      margin-bottom: 48px;
+      text-align: center;
+    }
+    .buy-btn {
+      display: block;
+      margin: 48px auto 0 auto;
+      padding: 14px 56px;
+      font-family: 'Abhaya Libre ExtraBold', serif;
+      font-size: 26px;
+      font-weight: 800;
+      color: #fff;
+      background: rgba(0,0,0,0.3);
+      border: 1px solid #fff;
+      border-radius: 32px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      transition: background 0.2s;
+    }
+    .buy-btn:hover {
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <a class="back-btn" href="原料目录4.html" aria-label="返回">
+        <svg width="96" height="96" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="36" y1="24" x2="12" y2="24" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+          <polyline points="18,18 12,24 18,30" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+  <video class="video-bg" src="气.mp4" autoplay loop muted></video>
+  <div class="gradient-mask"></div>
+  <div class="main-content">
+    <div class="brand">BYREDO</div>
+    <div style="position: relative; width: 100%; display: flex; flex-direction: column; align-items: center;">
+      <img class="perfume-img" src="气.png" alt="香水图片" style="z-index: 1; position: relative;">
+      <div class="text-overlay" style="position: absolute; top: 70%; left: 50%; transform: translateX(-50%); z-index: 2; width: 100%; display: flex; flex-direction: column; align-items: center;">
+        <div class="perfume-name">Rose of No Man's Land</div>
+        <div class="subtitle">你的最佳匹配香水</div>
+        <div class="divider"></div>
+        <div class="notes">薰衣草-玫瑰-洋甘菊</div>
+        <a href="https://annasui.com/" target="_blank" style="text-decoration: none;">
+          <button class="buy-btn">购买</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById('backBtn').onclick = function() {
+      const params = new URLSearchParams(window.location.search);
+      const from = params.get('from');
+      if(from) {
+        window.location.href = '../' + from;
+      } else {
+        history.back();
+      }
+    };
+  </script>
+</body>
+</html> 

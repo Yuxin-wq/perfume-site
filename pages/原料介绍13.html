@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原料介绍</title>
+    <link rel="stylesheet" href="../assets/css/ingredient13-style.css">
+    <style>
+        .to-qi-arrow-btn {
+            position: fixed;
+            right: 32px;
+            bottom: 32px;
+            z-index: 1000;
+            background: rgba(0,0,0,0.6);
+            border: none;
+            border-radius: 50%;
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .to-qi-arrow-btn:hover {
+            background: rgba(76,117,153,0.8);
+        }
+        .to-qi-arrow-btn svg {
+            width: 32px;
+            height: 32px;
+            fill: none;
+            stroke: #fff;
+            stroke-width: 2.5;
+        }
+    </style>
+</head>
+<body>
+    <!-- 左上角文字和退出箭头 -->
+    <div class="Vanilla-title">Vanilla 香草</div>
+    <a href="../pages/原料目录5.html" class="exit-arrow">←</a>
+
+    <!-- 左侧视频容器 -->
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="../assets/videos/ingredient13-Video.mp4" type="video/mp4">
+            您的浏览器不支持视频播放
+        </video>
+    </div>
+
+    <!-- 右侧内容容器 -->
+    <div class="content-container">
+        <!-- 1. 介绍文字 -->
+        <section class="text-section">
+            <h2>INTRODUCTION</h2>
+            <p>香草精油的核心成分包括香兰素、4-甲氧基苯甲醇、对羟基苯甲醛、愈创木酚和对羟基苯甲酸。这些挥发性分子吸入后，经鼻腔嗅觉受体投射至杏仁核与海马体等边缘系统区域，抑制下丘脑—垂体—肾上腺（HPA），降低皮质醇水平；同时正向调节GABA<sub>A</sub>受体并增强血清素及多巴胺活性，从而在缓解焦虑、减轻情绪压迫与带来安全温暖感方面具备可靠的科学依据。
+        </section>
+
+        <h2>MAIN INGREDIENTS</h2>
+        <!-- 替换为柱状图表 -->
+        <div class="bar-chart">
+            <div class="bar-container">
+                <div class="bar" style="height: 100%; background: linear-gradient(to top, #000000 10%, #E6C7B4 90%);"></div>
+                <p class="bar-label">Vanillin</p>
+            </div>
+            <div class="bar-container">
+                <div class="bar" style="height: 65%; background: linear-gradient(to top, #000000 10%, #E6C7B4 90%);"></div>
+                <p class="bar-label">4-Methoxy</p>
+            </div>
+            <div class="bar-container">
+                <div class="bar" style="height: 95%; background: linear-gradient(to top, #000000 10%, #E6C7B4 90%);"></div>
+                <p class="bar-label">p-Hydroxy</p>
+            </div>
+            <div class="bar-container">
+                <div class="bar" style="height: 40%; background: linear-gradient(to top, #000000 10%, #E6C7B4 90%);"></div>
+                <p class="bar-label">Guaiacol</p>
+            </div>
+            <div class="bar-container">
+                <div class="bar" style="height: 55%; background: linear-gradient(to top, #000000 10%, #E6C7B4 90%);"></div>
+                <p class="bar-label">p-Hydroxy acid</p>
+            </div>
+        </div>
+
+        <!-- 3. 产区图片（替换为单张） -->
+        <section class="production-section">
+            <h2>MAIN PRODUCTION AREA</h2>
+            <!-- 四张产区图片 + 文字 -->
+            <div class="region-container">
+                <div class="region-item">
+                    <img src="../assets/images/region1-香草.jpg" alt="产区1">
+                    <p class="region-text">Madagascar</p>
+                </div>
+                <div class="region-item">
+                    <img src="../assets/images/region2-香草.jpg" alt="产区2">
+                    <p class="region-text">Comoros</p>
+                </div>
+                <div class="region-item">
+                    <img src="../assets/images/region3-香草.jpg" alt="产区3">
+                    <p class="region-text">Mexico</p>
+                </div>
+                <div class="region-item">
+                    <img src="../assets/images/region4-香草.jpg" alt="产区4">
+                    <p class="region-text">Indonesia</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Oriental-title">Oriental 东方调</div>
+        <button class="to-qi-arrow-btn" onclick="window.location.href='懒.html?from=原料介绍13.html'" title="香水推荐">
+            <svg viewBox="0 0 48 48"><line x1="12" y1="24" x2="36" y2="24"/><polyline points="30,18 36,24 30,30"/></svg>
+        </button>
+    </div>
+</body>
+</html>
